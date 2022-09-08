@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
-#include <string.h> 
+#include <string.h>
 #include <stddef.h>
 #include <errno.h>
 #include <sys/types.h>
@@ -33,14 +33,14 @@
 
 typedef struct info
 {
-  char *program_name;
-  char *input_line;
-  char *command_name;
-  int exec_counter;
-  int file_descriptor;
-  char **tokens;
-  char **env;
-  char **alias_list;
+char *program_name;
+char *input_line;
+char *command_name;
+int exec_counter;
+int file_descriptor;
+char **tokens;
+char **env;
+char **alias_list;
 } data_of_program;
 
 /**
@@ -50,8 +50,8 @@ typedef struct info
  */
 typedef struct builtins
 {
-  char *builtin;
-  int (*function)(data_of_program *data);
+char *builtin;
+int (*function)(data_of_program *data);
 } builtins;
 
 
